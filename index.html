@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,78 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <!-- font inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- font inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
-        .font-inter{
+        .font-inter {
             font-family: "Inter", system-ui;
         }
-        
     </style>
 
-     
+
 </head>
-<body>
-    
+
+<body class="font-inter ">
+
+    <header class="container mx-auto sticky top-0 z-10">
+        <nav class=" bg-[#F9F7F3] pb-3  py-5">
+            <div class="navbar w-full flex flex-col md:flex-row mx-auto space-y-4 md:space-y-0">
+                <div class="navbar-start">
+                    <a href="blog.html"><button id="blog-button"
+                            class="btn btn-active bg-[#B4F461] hover:bg-[#b2ff4e] px-7 py-2 font-bold w-full md:w-fit">Blog</button>
+                    </a>
+                </div>
+                <div class="navbar-center">
+                    <img src="assets/logo.png" alt="">
+                    <a class="btn hover:bg-lime-200 bg-[#F9F7F3] border-none shadow-none text-xl font-bold">Donate
+                        Bangladesh</a>
+                </div>
+                <div class="navbar-end space-x-2 font-bold justify-center md:justify-end">
+                    <img class="" src="assets/coin.png" alt="">
+                    <p id="your-balance" class="opacity-85">10000</p>
+                    <p class="opacity-85">BDT</p>
+                </div>
+            </div>
+        </nav>
+        <section class=" backdrop-blur-lg click-button container mx-auto pt-3 lg:pt-16">
+            <div class="flex justify-center space-x-4">
+                <button id="donation-btn"
+                    class="btn bg-white border-2 border-[#7a7979ee] hover:bg-[#b2ff4e] px-7 py-2 ">Donation</button>
+                <button id="history-btn"
+                    class="btn bg-white border-2 border-[#7a7979ee] hover:bg-[#b2ff4e] px-7 py-2 ">History</button>
+            </div>
+        </section>
+    </header>
+
 
 
     <!-- ADDING JS FILE  -->
 
     <script src="features.js"></script>
     <script src="utilities.js"></script>
-    
+
 </body>
+
 </html>

@@ -1,11 +1,13 @@
 document.getElementById('donate-feni').addEventListener('click',function(event){
     event.preventDefault()
     const amount = getInputFieldValueById('amount-donate-feni');
-    // console.log(amount);
 
+    document.getElementById('amount-donate-feni').value = '';
+
+  
+    
     const balance =getTextField('your-balance');
-    // console.log(balance)
-    // validate
+   
     if(amount > balance){
         alert('you do not have sufficient balance to transfer');
         return;
@@ -14,19 +16,17 @@ document.getElementById('donate-feni').addEventListener('click',function(event){
         return;
     }else{
         const noakhaliDonation = getTextField('total-donation-feni');
-        // console.log(feniDonation)
-            
-            // added to 
+        
         const newBalanceNoakhali =  noakhaliDonation + amount ;
         document.getElementById('total-donation-feni').innerText=newBalanceNoakhali;
 
 
-            //deducted from main balance
+            
             const newBalance =  balance - amount ;
             document.getElementById('your-balance').innerText=newBalance;
             onclick=my_modal_5.showModal()
 
-            //added to transaction history
+        
        
         const historyItem = document.createElement('div');
         historyItem.className = 'bg-white p-8 border-2 rounded-xl  container mx-auto shadow-xl'

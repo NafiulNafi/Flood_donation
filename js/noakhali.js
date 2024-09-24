@@ -2,7 +2,7 @@ document.getElementById('donate-noakhali').addEventListener('click',function(eve
     event.preventDefault()
     const amount = getInputFieldValueById('amount-to-donate-noakhali');
 
-    document.getElementById('amount-to-donate-noakhali').value = '';
+    // document.getElementById('amount-to-donate-noakhali').value = '';
 
    
 

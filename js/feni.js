@@ -2,8 +2,8 @@ document.getElementById('donate-feni').addEventListener('click',function(event){
     event.preventDefault()
     const amount = getInputFieldValueById('amount-donate-feni');
 
+  
     document.getElementById('amount-donate-feni').value = '';
-
   
     
     const balance =getTextField('your-balance');
@@ -40,6 +40,8 @@ document.getElementById('donate-feni').addEventListener('click',function(event){
         historyContainer.insertBefore(historyItem,historyContainer.firstChild)
         
     }
+
+  
 
 
 })
